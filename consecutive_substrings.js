@@ -1,5 +1,16 @@
 function consecutiveSubstrings(string) {
   // type your code here
+  const result = [];
+
+  // Loop through each starting index
+  for (let i = 0; i < string.length; i++) {
+    // Create substrings starting from index i
+    for (let j = i + 1; j <= string.length; j++) {
+      result.push(string.slice(i, j));
+    }
+  }
+
+  return result;
 }
 
 if (require.main === module) {

@@ -1,2 +1,31 @@
 Please add your pseudocode to this file
 And a written explanation of your solution
+
+//pseudocode
+create empty array result
+
+for i from 0 to string length - 1
+    for j from i + 1 to string length
+        substring = string slice from i to j
+        add substring to result
+
+return result
+
+Solution Description:
+This algorithm generates all consecutive substrings of a given string.
+It uses two nested loops where the outer loop selects the starting index
+and the inner loop generates substrings by extending the end index.
+Each substring is added to an array in the order they appear.
+
+Example:
+Input: "abc"
+Output: ["a", "ab", "abc", "b", "bc", "c"]
+
+Algorithm Type:
+Brute-force / Nested iteration approach.
+
+Time Complexity:
+O(n²) where n is the length of the input string.
+
+Space Complexity:
+O(n²) due to storing all substrings.
